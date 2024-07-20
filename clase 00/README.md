@@ -17,6 +17,7 @@ Todo esto se hace en el cmd o la terminal de windows en tu caso. Esa aplicación
 Cosas que tienes que instalar:
 
 - [Link a la descarga del cliente git](https://git-scm.com/downloads)
+- Visual studio code (si no lo tienes que creo que si lo tienes)
 
 ## Clonar el repositorio
 
