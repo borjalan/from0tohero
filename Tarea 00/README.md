@@ -13,7 +13,6 @@ En este primer trabajito lo que tienes que hacer es:
 
 Todo esto se hace en el cmd o la terminal de windows en tu caso. Esa aplicación que abre una ventanita negra en la que puedes escribir cosas.
 
-
 Cosas que tienes que instalar:
 
 - [Link a la descarga del cliente git](https://git-scm.com/downloads)
@@ -27,6 +26,7 @@ Cosas que tienes que instalar:
 git clone <url-de-este-repo>
 
 ```
+
 ## Configurar git la primera vez
 
 [Git config](https://git-scm.com/book/es/v2/Inicio---Sobre-el-Control-de-Versiones-Configurando-Git-por-primera-vez)
@@ -34,6 +34,7 @@ git clone <url-de-este-repo>
 ## Añadir archivos a un commit
 
 [Git add](https://git-scm.com/docs/git-add)
+
 ```bash
 git add ./archivo
 ```
@@ -51,4 +52,5 @@ git commit
 ```bash
 git push
 ```
+
 [Git push](https://git-scm.com/docs/git-push)

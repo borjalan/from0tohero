@@ -4,7 +4,7 @@ En general subir código a una rama principal directamente es una mala idea. La 
 
 Para evitar que pase esto, se suele trabajar haciendo pull requests. Una pull Request no es más que una petición para que tus cambios sean incluidos dentro de una rama principal. Los repositorios de git siguen una forma similar a la de un árbol.
 
-![](https://miro.medium.com/v2/resize:fit:828/format:webp/1*DhagidpZutkaCmAZobmzDQ.png)
+![gráficogit](https://miro.medium.com/v2/resize:fit:828/format:webp/1*DhagidpZutkaCmAZobmzDQ.png)
 
 Cómo puedes ver en la imagen, tenemos una rama master (A veces llamada main como en nuestro caso) una rama develop y ramas llamadas feature.
 
@@ -18,19 +18,23 @@ En esta rama tenemos una versión algo más inestable y con cosas que no se han 
 
 ## Feature
 
-Cuando creamos una rama que con una forma similar a: 
-```
+Cuando creamos una rama que con una forma similar a:
+
+```bash
 feature/tarea00
 ```
+
 Lo que queremos decir es que est rama contiene una nueva caracteristica que es tarea 00. Varias ramas que comiencen con `feature/` creará un grupo de ramas que nos ayudará más adelante a distinguir el tipo de rama.
 
 ## Hotfix
 
 Cuando creamos una rama de hotfix o una rama de patch:
-```
+
+```bash
 hotfix/tarea00
 patch/tarea00
 ```
+
 Lo que estamos dando a entender es que esa rama contiene un cambio para corregir un bug de forma rápida. A veces hay bugs que es necesrio que se corrijan con velocidad. Estas ramas se utilizan para eso. Hotfix se suele usar para cuando hay prisa y patch para cuando se hace con calma
 
 ## Notas finales
@@ -39,23 +43,23 @@ Estos solo son patrones generales y más o menos conocidos para trabajar en git.
 
 ## Objetivo de la tarea 01
 
-**La rama main y la rama develop ahora están protegidas**
+### **La rama main y la rama develop ahora están protegidas**
 
-Esto quiere decir que ya no vas a poder subir cambios directamente en ellas. Podrías crear commits en tu rama local main o tu rama local develop pero no podrás subirlos a las ramas remotas. 
+Esto quiere decir que ya no vas a poder subir cambios directamente en ellas. Podrías crear commits en tu rama local main o tu rama local develop pero no podrás subirlos a las ramas remotas.
 
 Para poder subir un commit tienes que subir tu código nuevo a una rama:
 
-```
+```bash
 feature/tarea01
 ```
 
 Y luego crear una pull request para unir esos cambios a la rama develop. Los cambios que sean crear un fichero .txt dentro de la carpeta 01 que diga:
 
-```
+```bash
 Mi primera Pr
 ```
 
-## Comandos que tendrás que usar para esta tarea:
+## Comandos para esta tarea
 
 ```bash
 git pull
@@ -65,9 +69,9 @@ git commit
 git push
 ```
 
-**SIEMPRE QUE PONGAMOS EN LOS PATRONES DE COMANDOS <COSA> QUIERE DECIR QUE HAY QUE SUSTITUIR TODA LA PALABRA INCLUYENDO LOS SÍMBOLOS (<>). USAMOS LA FORMA <TEXTO_A_SUSTITUIR> PARA QUE SE DISTINGA DEL RESTO DE PARTES DE LOS COMANDOS**
+**SIEMPRE QUE PONGAMOS EN LOS PATRONES DE COMANDOS `<COSA>` QUIERE DECIR QUE HAY QUE SUSTITUIR TODA LA PALABRA INCLUYENDO LOS SÍMBOLOS (<>). USAMOS LA FORMA `<TEXTO_A_SUSTITUIR>` PARA QUE SE DISTINGA DEL RESTO DE PARTES DE LOS COMANDOS**
 
-### Proceso para subir cambios a un repositorio:
+### Proceso para subir cambios
 
 1. Descargar los cambios en tu versión local del repositiorio con `git pull`
 2. Cambiar a la rama develop con `git checkout <rama objetivo>`
@@ -82,6 +86,6 @@ git push
 
 Solo resta ir a la página web de github o del repositorio y crear desde ahí una pull request.
 
-![](./Captura.png)
+![botón pr](./Captura.png)
 
 Con este botón en la pestaña de pull request puedes crear una pull request que apunte los cambios de `feature/tarea01` a `develop`
