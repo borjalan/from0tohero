@@ -1,0 +1,49 @@
+#centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+html {
+    background: linear-gradient(232deg, #ffffff, #ca3434, #39a2e6, #68b925);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 45% 0%;
+    }
+    50% {
+        background-position: 56% 100%;
+    }
+    100% {
+        background-position: 45% 0%;
+    }
+}
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 45% 0%;
+    }
+    50% {
+        background-position: 56% 100%;
+    }
+    100% {
+        background-position: 45% 0%;
+    }
+}
+@keyframes AnimationName {
+    0% {
+        background-position: 45% 0%;
+    }
+    50% {
+        background-position: 56% 100%;
+    }
+    100% {
+        background-position: 45% 0%;
+    }
+}
