@@ -1,0 +1,31 @@
+body {
+  background-color: #eee;
+}
+
+button {
+  background-color: transparent;
+  font-weight: semibold;
+  color: #eee;
+  font-size: 1rem;
+  padding: 1rem 1.5rem;
+  border: 2px solid #fff;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: all 1s ease;
+  box-shadow: 0.5rem 0.5rem 1rem #ccc -0.5rem -0.5rem 1rem #fff;
+}
+
+button:hover {
+  box-shadow: insert 0.5rem 0.5rem 1rem #fff -0.5rem -0.5rem 1rem #ccc;
+}
+button:active {
+  box-shadow: 0.2rem 0.2rem 1rem #fff -0.2rem -0.2rem 1rem #ccc;
+}
+
+#contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #444;
+}
